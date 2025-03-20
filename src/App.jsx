@@ -41,7 +41,6 @@ export default function App() {
 
   const changeDisplayCart = () => {
     setCartDisplay(!CartDisplay);
-    document.body.style.overflow = CartDisplay ? "" : "hidden";
   };
 
   useEffect(() => {
