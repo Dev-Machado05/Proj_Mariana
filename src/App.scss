@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+}
+
+
+// Header
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 30px;
+  background-color: #033A12;
+
+  aside {
+    display: flex;
+  }
+}
+
+.UserContainer {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  section {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    cursor: pointer;
+  }
+
+  .UserIcon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+
+  h3 {
+    font-size: 21px;
+    max-width: 7vw;
+
+    font-size: 18px;
+    line-height: 19px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  span {
+    font-weight: 400;
+  }
+}
+
+.CartButton {
+  background-color: #00B530;
+  border: solid 1px #000000;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 19px;
+  width: 10vw;
+
+  h3 {
+    text-align: end;
+    font-size: 22px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+
+  span {
+    font-size: 12px;
+  }
+
+  img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .ChevronDown {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+// Disconect Pop-up
+
+.DisconectTable {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.72);
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: fit-content;
+    min-width: 300px;
+    width: fit-content;
+    align-items: center;
+    gap: 45px;
+    border: solid 1px #000000;
+    background-color: #25282c;
+    padding:  40px 50px;
+    border-radius: 10px;
+  }
+  
+  .ButtonContainer {
+    display: flex; 
+    gap: 20px;
+
+    .ReturnlButton {
+      background-color: rgb(8, 158, 2);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 15px;
+      font-size: 15px;
+      font-weight: 600;
+      width: 7vw;
+    }
+    
+    .DisconectButton {
+      @extend .ReturnlButton;
+      background-color: red;
+    
+  }
+}
+
+  h1{
+    font-size: 27px;
+    color: #ffffff;
+  }
+}
+
+
+
+// Account Pop-up
+
+.UserTable {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.72);
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: fit-content;
+    min-width: 300px;
+    width: fit-content;
+    align-items: center;
+    gap: 45px;
+    border: solid 1px #000000;
+    background-color: #25282c;
+    padding:  40px 50px;
+    border-radius: 10px;
+
+    .InputContainer {
+      display: flex;
+      flex-direction: column; 
+      gap: 20px;
+
+      input {
+        padding: 5px;
+        border-radius: 5px;
+        border: solid 0.5px #ffffff;
+        background-color: #25282c;
+        color: #ffffff;
+      }
+      
+    }
+    
+    .ButtonContainer {
+      display: flex;
+      gap: 10px;
+
+      .CancelButton {
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 15px;
+        font-weight: 600;
+        width: 5vw;
+        cursor: pointer;
+      }
+
+      .ConfirmButton {
+        @extend .CancelButton;
+        background-color: #029e19;
+      }
+    }
+
+    p {
+      color: #ffffff;
+      
+      span {
+        color: #029e19;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+
+    h1{
+      font-size: 27px;
+      color: #ffffff;
+    }
+  }
+}
+
+
+// Main content
+.MainContent {
+  padding: 3vh;
+}
+
+.ProductSectionTitle {
+  color: #00F825;
+  font-size: 29px;
+  text-decoration: underline;
+}
+
+.ProductContainer {
+  display: grid;
+  height: 39vh;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(232px, 2vw));
+  grid-auto-rows: minmax(250px, auto);
+  gap: 48px;
+  padding: 30px 0;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+// Footer
+
+footer {
+  height: 65px;
+  width: 100%;
+  background: #1E2C22;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    color: white;
+  }
+}
